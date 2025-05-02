@@ -1,0 +1,1183 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Watch4You - Khmer Movies &amp; Series
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: "Roboto", sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-gray-800 shadow-md">
+   <div class="container mx-auto flex items-center justify-between p-4" id="header-main">
+    <a class="text-3xl font-bold text-red-600 flex items-center space-x-3 cursor-pointer" id="logo-link">
+     <img alt="Watch4You logo, stylized red and white film reel icon with modern W4Y text" class="rounded-full shadow-lg" height="48" src="https://storage.googleapis.com/a1aa/image/e94e05d4-8501-4ed2-0e3e-d9dda876d649.jpg" width="48"/>
+     <span class="tracking-wide select-none">
+      Watch4You
+     </span>
+    </a>
+    <nav class="hidden md:flex space-x-6 text-gray-300 font-semibold" id="nav-main">
+     <a class="hover:text-red-600 transition cursor-pointer" data-nav="home">
+      Home
+     </a>
+     <a class="hover:text-red-600 transition cursor-pointer" data-nav="movies">
+      Movies
+     </a>
+     <a class="hover:text-red-600 transition cursor-pointer" data-nav="series">
+      Series
+     </a>
+     <a class="hover:text-red-600 transition cursor-pointer" data-nav="news">
+      News
+     </a>
+     <a class="hover:text-red-600 transition cursor-pointer" data-nav="contact">
+      Contact
+     </a>
+    </nav>
+    <div class="md:hidden">
+     <button aria-label="Toggle menu" class="focus:outline-none" id="menu-btn">
+      <i class="fas fa-bars text-2xl text-gray-300">
+      </i>
+     </button>
+    </div>
+   </div>
+   <nav class="hidden bg-gray-800 px-4 pb-4 md:hidden space-y-2 text-gray-300 font-semibold" id="mobile-menu">
+    <a class="block py-2 hover:text-red-600 transition cursor-pointer" data-nav="home">
+     Home
+    </a>
+    <a class="block py-2 hover:text-red-600 transition cursor-pointer" data-nav="movies">
+     Movies
+    </a>
+    <a class="block py-2 hover:text-red-600 transition cursor-pointer" data-nav="series">
+     Series
+    </a>
+    <a class="block py-2 hover:text-red-600 transition cursor-pointer" data-nav="news">
+     News
+    </a>
+    <a class="block py-2 hover:text-red-600 transition cursor-pointer" data-nav="contact">
+     Contact
+    </a>
+   </nav>
+  </header>
+  <!-- Adsterra Ad Banner 1 -->
+  <div class="container mx-auto mt-4 flex justify-center">
+   <script type="text/javascript">
+    atOptions = {
+        'key' : '1442b155dce4cde1166d735cca353a9a',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+   </script>
+   <script src="//www.highperformanceformat.com/1442b155dce4cde1166d735cca353a9a/invoke.js" type="text/javascript">
+   </script>
+  </div>
+  <!-- Main Content Container -->
+  <main class="flex-grow container mx-auto px-4 py-10" id="main-content">
+   <!-- Home Section (default) -->
+   <section aria-label="Home page content" class="space-y-10" id="section-home">
+    <!-- Hero Section -->
+    <section aria-label="Featured Khmer movie banner" class="relative bg-gray-900 text-white rounded-lg overflow-hidden">
+     <img alt="A dramatic scene from a popular Khmer movie with actors in traditional costumes and a sunset background" class="w-full h-60 sm:h-96 object-cover" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ef550ec4-8ab1-48f0-8ee9-aabb24bb6d16.jpg" width="1920"/>
+     <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent flex flex-col justify-end p-6 sm:p-12">
+      <h1 class="text-3xl sm:text-5xl font-extrabold max-w-xl leading-tight">
+       Watch the Latest Khmer Movies &amp; Series for Free
+      </h1>
+      <p class="mt-4 max-w-lg text-gray-300">
+       Stream your favorite Khmer films and TV shows anytime, anywhere on
+            Watch4You.
+      </p>
+      <a class="mt-6 inline-block bg-red-600 hover:bg-red-700 transition px-6 py-3 rounded font-semibold text-lg cursor-pointer" data-nav="movies">
+       Browse Movies
+      </a>
+     </div>
+    </section>
+    <!-- Movies Section -->
+    <section aria-label="Latest Khmer Movies" class="space-y-4" id="movies">
+     <div class="flex items-center justify-between mb-2">
+      <h2 class="text-3xl font-bold text-red-600">
+       Latest Khmer Movies
+      </h2>
+      <button aria-label="See more movies" class="text-red-600 font-semibold hover:underline cursor-pointer flex items-center space-x-1" id="btn-more-movies">
+       <span id="more-btn-text">
+        More
+       </span>
+       <i class="fas fa-chevron-right ml-1" id="more-btn-icon">
+       </i>
+      </button>
+     </div>
+     <div class="relative">
+      <input aria-label="Search movies" class="w-full rounded-md border border-gray-700 bg-gray-800 text-gray-100 placeholder-gray-500 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600" id="movie-search" placeholder="Search movies..." type="text"/>
+     </div>
+     <div aria-label="List of latest Khmer movies" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-2" id="movies-grid">
+      <article class="bg-gray-800 rounded overflow-hidden shadow-lg hover:shadow-red-600 transition cursor-pointer" data-movie-id="1">
+       <img alt="Movie poster of The Last Kingdom, showing a Khmer warrior in traditional armor holding a sword with a fiery background" class="w-full h-60 object-cover" height="420" loading="lazy" src="https://storage.googleapis.com/a1aa/image/8dcdc4d7-cb35-4f04-9e33-3c0e968583b9.jpg" width="300"/>
+       <div class="p-3">
+        <h3 class="font-semibold text-lg truncate">
+         The Last Kingdom
+        </h3>
+        <p class="text-sm text-gray-400 mt-1">
+         Action, Drama
+        </p>
+       </div>
+      </article>
+      <article class="bg-gray-800 rounded overflow-hidden shadow-lg hover:shadow-red-600 transition cursor-pointer" data-movie-id="2">
+       <img alt="Movie poster of Love in Phnom Penh, showing a romantic couple embracing in front of Phnom Penh skyline at sunset" class="w-full h-60 object-cover" height="420" loading="lazy" src="https://storage.googleapis.com/a1aa/image/aab923a1-61b5-4483-278e-9e64c10e0837.jpg" width="300"/>
+       <div class="p-3">
+        <h3 class="font-semibold text-lg truncate">
+         Love in Phnom Penh
+        </h3>
+        <p class="text-sm text-gray-400 mt-1">
+         Romance, Drama
+        </p>
+       </div>
+      </article>
+      <article class="bg-gray-800 rounded overflow-hidden shadow-lg hover:shadow-red-600 transition cursor-pointer" data-movie-id="3">
+       <img alt="Movie poster of The Spirit of Angkor, featuring ancient Khmer temple ruins with a mysterious glowing spirit figure" class="w-full h-60 object-cover" height="420" loading="lazy" src="https://storage.googleapis.com/a1aa/image/198e49ec-f002-4cf3-8fb7-fc755e1e585f.jpg" width="300"/>
+       <div class="p-3">
+        <h3 class="font-semibold text-lg truncate">
+         The Spirit of Angkor
+        </h3>
+        <p class="text-sm text-gray-400 mt-1">
+         Mystery, Fantasy
+        </p>
+       </div>
+      </article>
+      <article class="bg-gray-800 rounded overflow-hidden shadow-lg hover:shadow-red-600 transition cursor-pointer" data-movie-id="4">
+       <img alt="Movie poster of Journey to the Mekong, showing a boat sailing on the Mekong river with lush green jungle and mountains" class="w-full h-60 object-cover" height="420" loading="lazy" src="https://storage.googleapis.com/a1aa/image/94b79d8d-5f3f-4b22-6851-2de844c42049.jpg" width="300"/>
+       <div class="p-3">
+        <h3 class="font-semibold text-lg truncate">
+         Journey to the Mekong
+        </h3>
+        <p class="text-sm text-gray-400 mt-1">
+         Adventure, Drama
+        </p>
+       </div>
+      </article>
+      <article class="bg-gray-800 rounded overflow-hidden shadow-lg hover:shadow-red-600 transition cursor-pointer" data-movie-id="5">
+       <img alt="Movie poster of Khmer Legends, depicting legendary Khmer heroes in battle with mythical creatures" class="w-full h-60 object-cover" height="420" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e46f3c33-fc6e-437d-1abc-16c4d3f5f0e3.jpg" width="300"/>
+       <div class="p-3">
+        <h3 class="font-semibold text-lg truncate">
+         Khmer Legends
+        </h3>
+        <p class="text-sm text-gray-400 mt-1">
+         Action, Fantasy
+        </p>
+       </div>
+      </article>
+     </div>
+    </section>
+    <!-- Series Section -->
+    <section aria-label="Popular Khmer Series" id="series">
+     <h2 class="text-3xl font-bold mb-6 text-red-600">
+      Popular Khmer Series
+     </h2>
+     <div aria-label="List of popular Khmer series" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6" id="series-grid">
+      <article class="bg-gray-900 rounded overflow-hidden shadow-lg hover:shadow-red-600 transition cursor-pointer" data-series-id="1">
+       <img alt="Series poster of Phnom Penh Nights, showing a nighttime cityscape with neon lights and a mysterious figure" class="w-full h-60 object-cover" height="420" loading="lazy" src="https://storage.googleapis.com/a1aa/image/65b1f36e-e809-4938-9548-b6b92e7ca24d.jpg" width="300"/>
+       <div class="p-3">
+        <h3 class="font-semibold text-lg truncate">
+         Phnom Penh Nights
+        </h3>
+        <p class="text-sm text-gray-400 mt-1">
+         Thriller, Drama
+        </p>
+       </div>
+      </article>
+      <article class="bg-gray-900 rounded overflow-hidden shadow-lg hover:shadow-red-600 transition cursor-pointer" data-series-id="2">
+       <img alt="Series poster of Love &amp; War, showing a couple in traditional Khmer dress with a war-torn background" class="w-full h-60 object-cover" height="420" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4953cbef-46fa-4ec6-48be-8f411b103368.jpg" width="300"/>
+       <div class="p-3">
+        <h3 class="font-semibold text-lg truncate">
+         Love &amp; War
+        </h3>
+        <p class="text-sm text-gray-400 mt-1">
+         Romance, War
+        </p>
+       </div>
+      </article>
+      <article class="bg-gray-900 rounded overflow-hidden shadow-lg hover:shadow-red-600 transition cursor-pointer" data-series-id="3">
+       <img alt="Series poster of The Hidden Temple, featuring explorers discovering an ancient Khmer temple in the jungle" class="w-full h-60 object-cover" height="420" loading="lazy" src="https://storage.googleapis.com/a1aa/image/69e7ea2e-3e87-46cf-4181-be8ad0fadd0d.jpg" width="300"/>
+       <div class="p-3">
+        <h3 class="font-semibold text-lg truncate">
+         The Hidden Temple
+        </h3>
+        <p class="text-sm text-gray-400 mt-1">
+         Adventure, Mystery
+        </p>
+       </div>
+      </article>
+      <article class="bg-gray-900 rounded overflow-hidden shadow-lg hover:shadow-red-600 transition cursor-pointer" data-series-id="4">
+       <img alt="Series poster of Mekong Tales, showing villagers and river life along the Mekong river" class="w-full h-60 object-cover" height="420" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9074b824-2492-4c43-edd7-0825d3a0ee1f.jpg" width="300"/>
+       <div class="p-3">
+        <h3 class="font-semibold text-lg truncate">
+         Mekong Tales
+        </h3>
+        <p class="text-sm text-gray-400 mt-1">
+         Drama, Family
+        </p>
+       </div>
+      </article>
+      <article class="bg-gray-900 rounded overflow-hidden shadow-lg hover:shadow-red-600 transition cursor-pointer" data-series-id="5">
+       <img alt="Series poster of Kingdom of Shadows, depicting a dark fantasy Khmer kingdom with shadowy figures" class="w-full h-60 object-cover" height="420" loading="lazy" src="https://storage.googleapis.com/a1aa/image/af28ab33-9a20-4a39-4ab8-20e8cb53f93d.jpg" width="300"/>
+       <div class="p-3">
+        <h3 class="font-semibold text-lg truncate">
+         Kingdom of Shadows
+        </h3>
+        <p class="text-sm text-gray-400 mt-1">
+         Fantasy, Thriller
+        </p>
+       </div>
+      </article>
+     </div>
+    </section>
+    <!-- News Section -->
+    <section aria-label="Latest News &amp; Updates" id="news">
+     <h2 class="text-3xl font-bold mb-6 text-red-600">
+      Latest News &amp; Updates
+     </h2>
+     <div class="space-y-8" id="news-list">
+      <article class="bg-gray-800 rounded p-6 shadow-lg hover:shadow-red-600 transition" data-news-id="1">
+       <h3 class="text-xl font-semibold mb-2">
+        New Khmer Movie "The Last Kingdom" Released This Month
+       </h3>
+       <p class="text-gray-300 mb-3 news-summary">
+        The highly anticipated action movie "The Last Kingdom" is now
+              available to stream on Watch4You. Experience thrilling battles and
+              rich Khmer culture.
+       </p>
+       <p class="text-gray-300 mb-3 news-full hidden">
+        The highly anticipated action movie "The Last Kingdom" is now
+              available to stream on Watch4You. Experience thrilling battles and
+              rich Khmer culture. This movie features stunning visuals, an
+              engaging storyline, and performances by top Khmer actors. Don't
+              miss the exclusive behind-the-scenes footage and director's
+              commentary available only on Watch4You.
+       </p>
+       <a class="text-red-600 hover:underline font-semibold cursor-pointer read-more" data-news-id="1">
+        Read more →
+       </a>
+      </article>
+      <article class="bg-gray-800 rounded p-6 shadow-lg hover:shadow-red-600 transition" data-news-id="2">
+       <h3 class="text-xl font-semibold mb-2">
+        Watch4You Partners with Local Filmmakers to Promote Khmer Cinema
+       </h3>
+       <p class="text-gray-300 mb-3 news-summary">
+        We are excited to announce new collaborations with talented Khmer
+              filmmakers to bring you exclusive content and behind-the-scenes
+              footage.
+       </p>
+       <p class="text-gray-300 mb-3 news-full hidden">
+        We are excited to announce new collaborations with talented Khmer
+              filmmakers to bring you exclusive content and behind-the-scenes
+              footage. This partnership aims to support the growth of Khmer
+              cinema by providing a platform for emerging filmmakers and
+              showcasing diverse stories from Cambodia. Stay tuned for special
+              interviews, film festivals, and more.
+       </p>
+       <a class="text-red-600 hover:underline font-semibold cursor-pointer read-more" data-news-id="2">
+        Read more →
+       </a>
+      </article>
+      <article class="bg-gray-800 rounded p-6 shadow-lg hover:shadow-red-600 transition" data-news-id="3">
+       <h3 class="text-xl font-semibold mb-2">
+        Upcoming Series "Phnom Penh Nights" Premieres Next Week
+       </h3>
+       <p class="text-gray-300 mb-3 news-summary">
+        Get ready for a gripping thriller series set in the heart of Phnom
+              Penh. Watch4You will stream all episodes exclusively.
+       </p>
+       <p class="text-gray-300 mb-3 news-full hidden">
+        Get ready for a gripping thriller series set in the heart of Phnom
+              Penh. Watch4You will stream all episodes exclusively. "Phnom Penh
+              Nights" explores the dark underbelly of the city through the eyes
+              of a detective unraveling a complex mystery. Featuring a stellar
+              cast and intense storytelling, this series is a must-watch for
+              thriller fans.
+       </p>
+       <a class="text-red-600 hover:underline font-semibold cursor-pointer read-more" data-news-id="3">
+        Read more →
+       </a>
+      </article>
+     </div>
+    </section>
+    <!-- Contact Section -->
+    <section aria-label="Contact information and social media links" class="bg-gray-800 py-10 mt-10 rounded-lg" id="contact">
+     <div class="text-center text-gray-300">
+      <h2 class="text-3xl font-bold mb-6 text-red-600">
+       Contact Watch4You
+      </h2>
+      <p class="mb-4 text-lg">
+       Phone:
+       <a class="text-red-600 hover:underline" href="tel:+0977008435">
+        0977008435
+       </a>
+      </p>
+      <div class="flex justify-center space-x-8 mb-6">
+       <a aria-label="Facebook page" class="text-gray-300 hover:text-blue-600 transition text-3xl" href="https://www.facebook.com/share/15czZtALrt/" rel="noopener noreferrer" target="_blank">
+        <i class="fab fa-facebook-square">
+        </i>
+       </a>
+       <a aria-label="YouTube channel" class="text-gray-300 hover:text-red-600 transition text-3xl" href="https://youtube.com/@coolworldslab-ex1re?si=czTNsQUqF_ujBKG0" rel="noopener noreferrer" target="_blank">
+        <i class="fab fa-youtube">
+        </i>
+       </a>
+       <a aria-label="Call phone number" class="text-gray-300 hover:text-green-500 transition text-3xl" href="tel:+0977008435">
+        <i class="fas fa-phone-alt">
+        </i>
+       </a>
+      </div>
+      <p class="text-sm text-gray-500">
+       © 2024 Watch4You. All rights reserved.
+      </p>
+     </div>
+    </section>
+   </section>
+   <!-- Movie Watch Section (hidden by default) -->
+   <section aria-label="Watch selected movie with episodes" class="hidden flex flex-col space-y-6" id="section-watch">
+    <div class="flex items-center justify-between flex-wrap gap-2">
+     <h2 class="text-4xl font-bold text-red-600" id="watch-movie-title">
+      Movie Title
+     </h2>
+     <div class="flex space-x-4 flex-wrap gap-2">
+      <button aria-label="Back to home page" class="bg-gray-700 hover:bg-gray-600 text-gray-200 px-4 py-2 rounded font-semibold transition flex items-center" id="btn-back-home">
+       <i class="fas fa-arrow-left mr-2">
+       </i>
+       Back
+      </button>
+      <button aria-label="Toggle movie player visibility" class="bg-gray-700 hover:bg-gray-600 text-gray-200 px-4 py-2 rounded font-semibold transition flex items-center" id="btn-toggle-player">
+       <i class="fas fa-minus">
+       </i>
+       <span class="ml-2">
+        Hide Player
+       </span>
+      </button>
+     </div>
+    </div>
+    <div class="bg-gray-800 rounded shadow-lg overflow-hidden max-h-[720px] transition-all duration-300 relative" id="player-container">
+     <video class="w-full h-auto bg-black" controls="" id="movie-player" poster="" preload="metadata">
+      <source src="" type="video/mp4"/>
+      Your browser does not support the video tag.
+     </video>
+    </div>
+    <div>
+     <h3 class="text-xl font-semibold mb-3 text-red-600">
+      Episodes
+     </h3>
+     <div aria-label="List of episodes for the selected movie" class="flex flex-wrap gap-3" id="episodes-list">
+     </div>
+    </div>
+   </section>
+  </main>
+  <!-- Adsterra Ad Banner 2 -->
+  <div class="container mx-auto mt-8 flex justify-center">
+   <script type="text/javascript">
+    atOptions = {
+        'key' : 'b182962c5de8261f0f71608a6e0e27a2',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+   </script>
+   <script src="//www.highperformanceformat.com/b182962c5de8261f0f71608a6e0e27a2/invoke.js" type="text/javascript">
+   </script>
+  </div>
+  <script>
+   // Movie data with episodes and video URLs (example videos from sample-videos.com and placehold.co)
+    const moviesData = {
+      1: {
+        title: "The Last Kingdom",
+        poster:
+          "https://storage.googleapis.com/a1aa/image/8dcdc4d7-cb35-4f04-9e33-3c0e968583b9.jpg",
+        episodes: [
+          {
+            id: "01",
+            title: "Episode 01",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "02",
+            title: "Episode 02",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "03",
+            title: "Episode 03",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+        ],
+      },
+      2: {
+        title: "Love in Phnom Penh",
+        poster:
+          "https://storage.googleapis.com/a1aa/image/aab923a1-61b5-4483-278e-9e64c10e0837.jpg",
+        episodes: [
+          {
+            id: "01",
+            title: "Episode 01",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "02",
+            title: "Episode 02",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+        ],
+      },
+      3: {
+        title: "The Spirit of Angkor",
+        poster:
+          "https://storage.googleapis.com/a1aa/image/198e49ec-f002-4cf3-8fb7-fc755e1e585f.jpg",
+        episodes: [
+          {
+            id: "01",
+            title: "Episode 01",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "02",
+            title: "Episode 02",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "03",
+            title: "Episode 03",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "04",
+            title: "Episode 04",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+        ],
+      },
+      4: {
+        title: "Journey to the Mekong",
+        poster:
+          "https://storage.googleapis.com/a1aa/image/94b79d8d-5f3f-4b22-6851-2de844c42049.jpg",
+        episodes: [
+          {
+            id: "01",
+            title: "Episode 01",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "02",
+            title: "Episode 02",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+        ],
+      },
+      5: {
+        title: "Khmer Legends",
+        poster:
+          "https://storage.googleapis.com/a1aa/image/e46f3c33-fc6e-437d-1abc-16c4d3f5f0e3.jpg",
+        episodes: [
+          {
+            id: "01",
+            title: "Episode 01",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "02",
+            title: "Episode 02",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "03",
+            title: "Episode 03",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "04",
+            title: "Episode 04",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "05",
+            title: "Episode 05",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+        ],
+      },
+      6: {
+        title: "Angkor Dawn",
+        poster:
+          "https://placehold.co/300x420/png?text=Angkor+Dawn+Movie+Poster",
+        episodes: [
+          {
+            id: "01",
+            title: "Episode 01",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "02",
+            title: "Episode 02",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+        ],
+      },
+      7: {
+        title: "Sihanouk's Legacy",
+        poster:
+          "https://placehold.co/300x420/png?text=Sihanouk's+Legacy+Movie+Poster",
+        episodes: [
+          {
+            id: "01",
+            title: "Episode 01",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+        ],
+      },
+      8: {
+        title: "Temple Shadows",
+        poster:
+          "https://placehold.co/300x420/png?text=Temple+Shadows+Movie+Poster",
+        episodes: [
+          {
+            id: "01",
+            title: "Episode 01",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "02",
+            title: "Episode 02",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "03",
+            title: "Episode 03",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+        ],
+      },
+      9: {
+        title: "River Spirits",
+        poster:
+          "https://placehold.co/300x420/png?text=River+Spirits+Movie+Poster",
+        episodes: [
+          {
+            id: "01",
+            title: "Episode 01",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+        ],
+      },
+      10: {
+        title: "Golden Lotus",
+        poster:
+          "https://placehold.co/300x420/png?text=Golden+Lotus+Movie+Poster",
+        episodes: [
+          {
+            id: "01",
+            title: "Episode 01",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "02",
+            title: "Episode 02",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+        ],
+      },
+      11: {
+        title: "Shadow of the King",
+        poster:
+          "https://placehold.co/300x420/png?text=Shadow+of+the+King+Movie+Poster",
+        episodes: [
+          {
+            id: "01",
+            title: "Episode 01",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+        ],
+      },
+      12: {
+        title: "Mystic Jungle",
+        poster:
+          "https://placehold.co/300x420/png?text=Mystic+Jungle+Movie+Poster",
+        episodes: [
+          {
+            id: "01",
+            title: "Episode 01",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "02",
+            title: "Episode 02",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "03",
+            title: "Episode 03",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "04",
+            title: "Episode 04",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+        ],
+      },
+      13: {
+        title: "Phnom Penh Dreams",
+        poster:
+          "https://placehold.co/300x420/png?text=Phnom+Penh+Dreams+Movie+Poster",
+        episodes: [
+          {
+            id: "01",
+            title: "Episode 01",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+        ],
+      },
+      14: {
+        title: "The Last Monk",
+        poster:
+          "https://placehold.co/300x420/png?text=The+Last+Monk+Movie+Poster",
+        episodes: [
+          {
+            id: "01",
+            title: "Episode 01",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "02",
+            title: "Episode 02",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+        ],
+      },
+      15: {
+        title: "Kingdom's Fall",
+        poster:
+          "https://placehold.co/300x420/png?text=Kingdom's+Fall+Movie+Poster",
+        episodes: [
+          {
+            id: "01",
+            title: "Episode 01",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "02",
+            title: "Episode 02",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+          {
+            id: "03",
+            title: "Episode 03",
+            videoUrl:
+              "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          },
+        ],
+      },
+    };
+
+    // Elements
+    const mainContent = document.getElementById("main-content");
+    const sectionHome = document.getElementById("section-home");
+    const sectionWatch = document.getElementById("section-watch");
+    const watchMovieTitle = document.getElementById("watch-movie-title");
+    const episodesList = document.getElementById("episodes-list");
+    const moviePlayer = document.getElementById("movie-player");
+    const playerContainer = document.getElementById("player-container");
+    const btnBackHome = document.getElementById("btn-back-home");
+    const btnTogglePlayer = document.getElementById("btn-toggle-player");
+
+    // Navigation elements
+    const navMain = document.getElementById("nav-main");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuBtn = document.getElementById("menu-btn");
+    const logoLink = document.getElementById("logo-link");
+
+    // Movies grid and More button
+    const moviesGrid = document.getElementById("movies-grid");
+    const btnMoreMovies = document.getElementById("btn-more-movies");
+    const moreBtnText = document.getElementById("more-btn-text");
+    const moreBtnIcon = document.getElementById("more-btn-icon");
+
+    // Search input
+    const movieSearchInput = document.getElementById("movie-search");
+
+    // Series grid
+    const seriesGrid = document.getElementById("series-grid");
+
+    // News list
+    const newsList = document.getElementById("news-list");
+
+    // State to track if all movies are shown
+    let allMoviesShown = false;
+
+    // Store last played episode URL to restore after reload
+    let lastPlayedVideoUrl = null;
+
+    // Store current movie id
+    let currentMovieId = null;
+
+    // Toggle mobile menu
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Navigation click handler
+    function navigateTo(section) {
+      // Hide watch section if visible
+      sectionWatch.classList.add("hidden");
+      sectionHome.classList.add("hidden");
+
+      // Show requested section
+      if (section === "home") {
+        sectionHome.classList.remove("hidden");
+      } else if (section === "movies") {
+        sectionHome.classList.remove("hidden");
+        // Scroll to movies section inside home
+        const moviesSection = document.getElementById("movies");
+        moviesSection.scrollIntoView({ behavior: "smooth" });
+      } else if (section === "series") {
+        sectionHome.classList.remove("hidden");
+        const seriesSection = document.getElementById("series");
+        seriesSection.scrollIntoView({ behavior: "smooth" });
+      } else if (section === "news") {
+        sectionHome.classList.remove("hidden");
+        const newsSection = document.getElementById("news");
+        newsSection.scrollIntoView({ behavior: "smooth" });
+      } else if (section === "contact") {
+        sectionHome.classList.remove("hidden");
+        const contactSection = document.getElementById("contact");
+        contactSection.scrollIntoView({ behavior: "smooth" });
+      }
+      // Close mobile menu if open
+      if (!mobileMenu.classList.contains("hidden")) {
+        mobileMenu.classList.add("hidden");
+      }
+      // Scroll to top for home or watch
+      if (section === "home") window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    // Attach nav click events
+    function attachNavEvents() {
+      // Desktop nav
+      navMain.querySelectorAll("a[data-nav]").forEach((link) => {
+        link.addEventListener("click", () => {
+          navigateTo(link.getAttribute("data-nav"));
+        });
+      });
+      // Mobile nav
+      mobileMenu.querySelectorAll("a[data-nav]").forEach((link) => {
+        link.addEventListener("click", () => {
+          navigateTo(link.getAttribute("data-nav"));
+        });
+      });
+      // Hero browse movies button
+      sectionHome.querySelectorAll("a[data-nav='movies']").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          navigateTo("movies");
+        });
+      });
+      // Logo click goes home
+      logoLink.addEventListener("click", () => {
+        navigateTo("home");
+      });
+    }
+
+    attachNavEvents();
+
+    // Show watch section for selected movie
+    function showWatchSection(movieId) {
+      const movie = moviesData[movieId];
+      if (!movie) return;
+
+      currentMovieId = movieId;
+
+      // Set movie title
+      watchMovieTitle.textContent = movie.title;
+
+      // Clear episodes list
+      episodesList.innerHTML = "";
+
+      // Populate episodes buttons
+      movie.episodes.forEach((ep, idx) => {
+        const btn = document.createElement("button");
+        btn.className =
+          "bg-red-600 hover:bg-red-700 transition text-white px-4 py-2 rounded font-semibold cursor-pointer";
+        btn.textContent = ep.title;
+        btn.setAttribute("data-video-url", ep.videoUrl);
+        btn.setAttribute("aria-label", `Play ${movie.title} ${ep.title}`);
+        btn.addEventListener("click", () => {
+          playVideo(ep.videoUrl);
+          highlightEpisodeButton(btn);
+          lastPlayedVideoUrl = ep.videoUrl;
+        });
+        episodesList.appendChild(btn);
+      });
+
+      // Show watch section, hide home
+      sectionHome.classList.add("hidden");
+      sectionWatch.classList.remove("hidden");
+
+      // Do NOT auto play any episode on movie click
+      // Just clear the player and highlight no episode
+      moviePlayer.pause();
+      moviePlayer.src = "";
+      playerContainer.classList.remove("hidden");
+      btnTogglePlayer.querySelector("i").className = "fas fa-minus";
+      btnTogglePlayer.querySelector("span")?.remove();
+      btnTogglePlayer.innerHTML = '<i class="fas fa-minus"></i> <span class="ml-2">Hide Player</span>';
+
+      // Remove highlight from all episode buttons
+      Array.from(episodesList.children).forEach((btn) => {
+        btn.classList.remove("ring", "ring-red-500");
+      });
+    }
+
+    // Play video in player
+    function playVideo(url) {
+      moviePlayer.pause();
+      // If the url is a YouTube link, replace with embed mp4 fallback or show alert
+      // Since <video> cannot play YouTube URLs directly, fallback to sample video
+      if (url.startsWith("https://youtu.be/") || url.includes("youtube.com")) {
+        // For demo, fallback to sample video
+        moviePlayer.src = "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4";
+      } else {
+        moviePlayer.src = url;
+      }
+      moviePlayer.load();
+      moviePlayer.play();
+      lastPlayedVideoUrl = url;
+    }
+
+    // Highlight selected episode button
+    function highlightEpisodeButton(selectedBtn) {
+      Array.from(episodesList.children).forEach((btn) => {
+        btn.classList.remove("ring", "ring-red-500");
+      });
+      selectedBtn.classList.add("ring", "ring-red-500");
+    }
+
+    // Attach click events to movies in home section
+    function attachMovieClickEvents() {
+      const movieArticles = sectionHome.querySelectorAll("article[data-movie-id]");
+      movieArticles.forEach((article) => {
+        article.addEventListener("click", () => {
+          const movieId = article.getAttribute("data-movie-id");
+          showWatchSection(movieId);
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      });
+    }
+
+    attachMovieClickEvents();
+
+    // Attach click events to series in series section
+    function attachSeriesClickEvents() {
+      const seriesArticles = seriesGrid.querySelectorAll("article[data-series-id]");
+      seriesArticles.forEach((article) => {
+        article.addEventListener("click", () => {
+          const seriesId = article.getAttribute("data-series-id");
+          // Map seriesId to movieId for playback
+          // For this example, map series 1-5 to movies 1-5 respectively
+          const movieId = parseInt(seriesId, 10);
+          if (moviesData[movieId]) {
+            showWatchSection(movieId);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        });
+      });
+    }
+
+    attachSeriesClickEvents();
+
+    // Back button click: go to home
+    btnBackHome.addEventListener("click", () => {
+      sectionWatch.classList.add("hidden");
+      sectionHome.classList.remove("hidden");
+      moviePlayer.pause();
+      moviePlayer.src = "";
+      lastPlayedVideoUrl = null;
+      currentMovieId = null;
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Toggle player visibility
+    btnTogglePlayer.addEventListener("click", () => {
+      if (playerContainer.classList.contains("hidden")) {
+        playerContainer.classList.remove("hidden");
+        btnTogglePlayer.querySelector("i").className = "fas fa-minus";
+        btnTogglePlayer.querySelector("span")?.remove();
+        btnTogglePlayer.innerHTML = '<i class="fas fa-minus"></i> <span class="ml-2">Hide Player</span>';
+      } else {
+        playerContainer.classList.add("hidden");
+        btnTogglePlayer.querySelector("i").className = "fas fa-plus";
+        btnTogglePlayer.querySelector("span")?.remove();
+        btnTogglePlayer.innerHTML = '<i class="fas fa-plus"></i> <span class="ml-2">Show Player</span>';
+        moviePlayer.pause();
+      }
+    });
+
+    // Handle "More" button click to toggle movies list
+    btnMoreMovies.addEventListener("click", () => {
+      if (!allMoviesShown) {
+        // Show all 15 movies from moviesData
+        moviesGrid.innerHTML = "";
+        for (let i = 1; i <= 15; i++) {
+          const movie = moviesData[i];
+          if (!movie) continue;
+
+          const article = document.createElement("article");
+          article.className = "bg-gray-800 rounded overflow-hidden shadow-lg hover:shadow-red-600 transition cursor-pointer";
+          article.setAttribute("data-movie-id", i);
+
+          const img = document.createElement("img");
+          img.className = "w-full h-60 object-cover";
+          img.height = 420;
+          img.loading = "lazy";
+          img.width = 300;
+          img.alt = `Movie poster of ${movie.title}, detailed artistic poster representing the movie theme`;
+          img.src = movie.poster;
+
+          const div = document.createElement("div");
+          div.className = "p-3";
+
+          const h3 = document.createElement("h3");
+          h3.className = "font-semibold text-lg truncate";
+          h3.textContent = movie.title;
+
+          const p = document.createElement("p");
+          p.className = "text-sm text-gray-400 mt-1";
+          if (i <= 5) {
+            switch(i) {
+              case 1: p.textContent = "Action, Drama"; break;
+              case 2: p.textContent = "Romance, Drama"; break;
+              case 3: p.textContent = "Mystery, Fantasy"; break;
+              case 4: p.textContent = "Adventure, Drama"; break;
+              case 5: p.textContent = "Action, Fantasy"; break;
+            }
+          } else {
+            p.textContent = "Genre info coming soon";
+          }
+
+          div.appendChild(h3);
+          div.appendChild(p);
+          article.appendChild(img);
+          article.appendChild(div);
+
+          moviesGrid.appendChild(article);
+        }
+        attachMovieClickEvents();
+
+        // Scroll to movies section after loading more
+        const moviesSection = document.getElementById("movies");
+        moviesSection.scrollIntoView({ behavior: "smooth" });
+
+        // Change button to "Less" with left arrow
+        moreBtnText.textContent = "Less";
+        moreBtnIcon.className = "fas fa-chevron-left";
+        allMoviesShown = true;
+      } else {
+        // Revert to initial 5 movies
+        moviesGrid.innerHTML = `
+          <article
+            class="bg-gray-800 rounded overflow-hidden shadow-lg hover:shadow-red-600 transition cursor-pointer"
+            data-movie-id="1"
+          >
+            <img
+              alt="Movie poster of The Last Kingdom, showing a Khmer warrior in traditional armor holding a sword with a fiery background"
+              class="w-full h-60 object-cover"
+              height="420"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/8dcdc4d7-cb35-4f04-9e33-3c0e968583b9.jpg"
+              width="300"
+            />
+            <div class="p-3">
+              <h3 class="font-semibold text-lg truncate">The Last Kingdom</h3>
+              <p class="text-sm text-gray-400 mt-1">Action, Drama</p>
+            </div>
+          </article>
+          <article
+            class="bg-gray-800 rounded overflow-hidden shadow-lg hover:shadow-red-600 transition cursor-pointer"
+            data-movie-id="2"
+          >
+            <img
+              alt="Movie poster of Love in Phnom Penh, showing a romantic couple embracing in front of Phnom Penh skyline at sunset"
+              class="w-full h-60 object-cover"
+              height="420"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/aab923a1-61b5-4483-278e-9e64c10e0837.jpg"
+              width="300"
+            />
+            <div class="p-3">
+              <h3 class="font-semibold text-lg truncate">Love in Phnom Penh</h3>
+              <p class="text-sm text-gray-400 mt-1">Romance, Drama</p>
+            </div>
+          </article>
+          <article
+            class="bg-gray-800 rounded overflow-hidden shadow-lg hover:shadow-red-600 transition cursor-pointer"
+            data-movie-id="3"
+          >
+            <img
+              alt="Movie poster of The Spirit of Angkor, featuring ancient Khmer temple ruins with a mysterious glowing spirit figure"
+              class="w-full h-60 object-cover"
+              height="420"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/198e49ec-f002-4cf3-8fb7-fc755e1e585f.jpg"
+              width="300"
+            />
+            <div class="p-3">
+              <h3 class="font-semibold text-lg truncate">The Spirit of Angkor</h3>
+              <p class="text-sm text-gray-400 mt-1">Mystery, Fantasy</p>
+            </div>
+          </article>
+          <article
+            class="bg-gray-800 rounded overflow-hidden shadow-lg hover:shadow-red-600 transition cursor-pointer"
+            data-movie-id="4"
+          >
+            <img
+              alt="Movie poster of Journey to the Mekong, showing a boat sailing on the Mekong river with lush green jungle and mountains"
+              class="w-full h-60 object-cover"
+              height="420"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/94b79d8d-5f3f-4b22-6851-2de844c42049.jpg"
+              width="300"
+            />
+            <div class="p-3">
+              <h3 class="font-semibold text-lg truncate">Journey to the Mekong</h3>
+              <p class="text-sm text-gray-400 mt-1">Adventure, Drama</p>
+            </div>
+          </article>
+          <article
+            class="bg-gray-800 rounded overflow-hidden shadow-lg hover:shadow-red-600 transition cursor-pointer"
+            data-movie-id="5"
+          >
+            <img
+              alt="Movie poster of Khmer Legends, depicting legendary Khmer heroes in battle with mythical creatures"
+              class="w-full h-60 object-cover"
+              height="420"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/e46f3c33-fc6e-437d-1abc-16c4d3f5f0e3.jpg"
+              width="300"
+            />
+            <div class="p-3">
+              <h3 class="font-semibold text-lg truncate">Khmer Legends</h3>
+              <p class="text-sm text-gray-400 mt-1">Action, Fantasy</p>
+            </div>
+          </article>
+        `;
+        attachMovieClickEvents();
+
+        // Scroll to movies section after reverting
+        const moviesSection = document.getElementById("movies");
+        moviesSection.scrollIntoView({ behavior: "smooth" });
+
+        // Change button back to "More" with right arrow
+        moreBtnText.textContent = "More";
+        moreBtnIcon.className = "fas fa-chevron-right";
+        allMoviesShown = false;
+      }
+    });
+
+    // Search movies filtering
+    movieSearchInput.addEventListener("input", () => {
+      const query = movieSearchInput.value.trim().toLowerCase();
+      const movieArticles = moviesGrid.querySelectorAll("article[data-movie-id]");
+      movieArticles.forEach(article => {
+        const movieId = article.getAttribute("data-movie-id");
+        const movie = moviesData[movieId];
+        if (!movie) {
+          article.style.display = "none";
+          return;
+        }
+        if (movie.title.toLowerCase().includes(query)) {
+          article.style.display = "";
+        } else {
+          article.style.display = "none";
+        }
+      });
+    });
+
+    // News "Read more" toggle
+    function attachNewsReadMoreEvents() {
+      const readMoreLinks = newsList.querySelectorAll(".read-more");
+      readMoreLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          const newsId = link.getAttribute("data-news-id");
+          const article = newsList.querySelector(`article[data-news-id="${newsId}"]`);
+          if (!article) return;
+          const summary = article.querySelector(".news-summary");
+          const full = article.querySelector(".news-full");
+          if (full.classList.contains("hidden")) {
+            full.classList.remove("hidden");
+            summary.classList.add("hidden");
+            link.textContent = "Read less ↑";
+            // Change background to black-gray-Angkor Wat image
+            document.body.style.backgroundColor = "#1a1a1a";
+            if (!document.getElementById("angkor-wat-bg-img")) {
+              const bgImg = document.createElement("img");
+              bgImg.id = "angkor-wat-bg-img";
+              bgImg.src = "https://placehold.co/1920x1080/png?text=Angkor+Wat+Background+Image+Dark+Theme";
+              bgImg.alt = "Black-gray artistic background image of Angkor Wat temple silhouette at night";
+              bgImg.className = "fixed inset-0 w-full h-full object-cover opacity-20 pointer-events-none -z-10";
+              document.body.appendChild(bgImg);
+            }
+          } else {
+            full.classList.add("hidden");
+            summary.classList.remove("hidden");
+            link.textContent = "Read more →";
+            // Remove background image and reset background color
+            const bgImg = document.getElementById("angkor-wat-bg-img");
+            if (bgImg) {
+              bgImg.remove();
+            }
+            document.body.style.backgroundColor = "";
+          }
+        });
+      });
+    }
+
+    attachNewsReadMoreEvents();
+  </script>
+ </body>
+</html>
